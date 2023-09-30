@@ -26,6 +26,27 @@ class Car extends VehicleModule {
     }
 }
 
+loadPassenger(num) {
+    if(this.passenger > this.maxPassengers) {
+        console.log('no more passengers will fit')
+    }
+}
+
+start() {
+    if(this.fuel >= 1) {
+        console.log('true')
+    } else {
+        console.log('the car needs gas')
+    }
+}
+
+scheduleService() {
+    if(this.mileage > 30000) {
+        console.log('true')
+    } else {
+        console.log('car maintenance is up to date')
+    }
+}
 
 
 
