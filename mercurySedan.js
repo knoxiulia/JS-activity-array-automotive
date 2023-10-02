@@ -14,7 +14,7 @@ console.log(v.make)
 //TO DO: Code the Car subclass here or in index.js file, i.e. class Car extends Vehicle ...
 
 
-class Car extends VehicleModule {
+class Car extends VehicleModule.Vehicle {
     constructor(make, model, year, color, mileage) {
         super (make, model, year, color, mileage)
         this.maximumPassengers = 5
@@ -32,13 +32,6 @@ loadPassenger(num) {
     }
 }
 
-start() {
-    if(this.fuel >= 1) {
-        console.log('true')
-    } else {
-        console.log('the car needs gas')
-    }
-}
 
 scheduleService() {
     if(this.mileage > 30000) {
@@ -49,7 +42,7 @@ scheduleService() {
 }
 
 
-
+let car = new Car('A28, Mercury, Sedan')
 
 
 
