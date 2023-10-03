@@ -16,34 +16,35 @@ console.log(v.make)
 
 class Car extends VehicleModule.Vehicle {
     constructor(make, model, year, color, mileage) {
-        super (make, model, year, color, mileage)
+        super(make, model, year, color, mileage)
         this.maximumPassengers = 5
         this.passengers = 0
         this.numberOfWheels = 4
         this.maximumSpeed = 160
         this.fuel = 10
-        this.scheduleService = false
+        this.isScheduleService = false
     }
-}
 
-loadPassenger(num) {
-    if(this.passenger > this.maxPassengers) {
-        console.log('no more passengers will fit')
+
+    loadPassenger(num) {
+        if (this.passenger > this.maxPassengers) {
+            console.log('no more passengers will fit')
+        }
     }
-}
 
 
-scheduleService() {
-    if(this.mileage > 30000) {
-        console.log('true')
-    } else {
-        console.log('car maintenance is up to date')
+    scheduleService() {
+        if (this.mileage > 30000) {
+            console.log('true')
+        } else {
+            console.log('car maintenance is up to date')
+        }
     }
 }
 
 
 let car = new Car('A28, Mercury, Sedan')
-
+car.scheduleService(100)
 
 
 
